@@ -14,6 +14,7 @@ class PhotoGalleryApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Photo Gallery'),
@@ -49,10 +50,10 @@ class PhotoGalleryApp extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 16),
+              SizedBox(height: 16),
               Wrap(
-                spacing: 16,
-                runSpacing: 16,
+                spacing: 10,
+                runSpacing: 10,
                 children: [
                   ElevatedButton(
                     onPressed: () {
@@ -60,18 +61,96 @@ class PhotoGalleryApp extends StatelessWidget {
                     },
                     child: Column(
                       children: [
-                       Image.network(
-                          'https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg',
-                          width: 100,
-                          height: 100,
+                        Image.network(
+                          'https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                          width: 80,
+                          height: 80,
+                          fit: BoxFit.cover,
                         ),
-                        const SizedBox(height: 8),
-                        const Text('Photo 1'),
-
+                        Text('Photo 1'),
                       ],
                     ),
                   ),
-
+                  ElevatedButton(
+                    onPressed: () {
+                      showSnackbar(context, 'Clicked on photo!');
+                    },
+                    child: Column(
+                      children: [
+                        Image.network(
+                          'https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                          width: 80,
+                          height: 80,
+                          fit: BoxFit.cover,
+                        ),
+                        Text('Photo 1'),
+                      ],
+                    ),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      showSnackbar(context, 'Clicked on photo!');
+                    },
+                    child: Column(
+                      children: [
+                        Image.network(
+                          'https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                          width: 80,
+                          height: 80,
+                          fit: BoxFit.cover,
+                        ),
+                        Text('Photo 1'),
+                      ],
+                    ),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      showSnackbar(context, 'Clicked on photo!');
+                    },
+                    child: Column(
+                      children: [
+                        Image.network(
+                          'https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                          width: 80,
+                          height: 80,
+                          fit: BoxFit.cover,
+                        ),
+                        Text('Photo 1'),
+                      ],
+                    ),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      showSnackbar(context, 'Clicked on photo!');
+                    },
+                    child: Column(
+                      children: [
+                        Image.network(
+                          'https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                          width: 80,
+                          height: 80,
+                          fit: BoxFit.cover,
+                        ),
+                        Text('Photo 1'),
+                      ],
+                    ),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      showSnackbar(context, 'Clicked on photo!');
+                    },
+                    child: Column(
+                      children: [
+                        Image.network(
+                          'https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                          width: 80,
+                          height: 80,
+                          fit: BoxFit.cover,
+                        ),
+                        Text('Photo 1'),
+                      ],
+                    ),
+                  ),
 
                   // Add more ElevatedButton or OutlineButton widgets here
                 ],
